@@ -60,7 +60,7 @@ if(!isset($_SESSION['email']) && !isset($_SESSION['group_id'])){
         <?php include('includes/navbar.php')?>
         <div class="container">
             <div class="row">
-                <div class="col-md-4 offset-md-4">
+                <div class="col-md-4 offset-md-4 mb-5">
                     <form id="signup-form" method="post" action="signup.php">
                         <h3>Sign up for an account</h3>
                         <div class="form-group">

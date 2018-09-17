@@ -13,11 +13,11 @@
                     <h4>$product_name</h4>
                     <img src=\"images/product/$product_category/$product_photo\" class=\"img-fluid\">
                     <h5>$product_price</h5>";
-        echo "<a href=\"detail.product.php?product_id=$product_id\">Detail</a>";
-        echo "<a href=\"edit.product.php?product_id=$product_id\">Edit</a>";
+        echo "<a href=\"detail.product.php?product_id=$product_id\">View Details   / </a>";
+        echo "<a href=\"edit.product.php?product_id=$product_id\">Edit Details</a>";
         echo "<form id=\"product-form\" method=\"post\" action=\"product.manager.php\">
                 <input class=\"form-control\" type=\"hidden\" name=\"product_id\" id=\"product_id\" value=\"$product_id\"/>
-                <button id=\"action\" name=\"action\" value=\"delete\" class=\"btn btn-info mt-2 mb-4 \" type=\"submit\"> Delete </button>
+                <button id=\"action\" name=\"action\" value=\"delete\" class=\"btn btn-info bg-dark mt-2 mb-4 \" type=\"submit\"> Delete </button>
 		      </form> ";
         
         echo "</div>";

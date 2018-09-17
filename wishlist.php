@@ -60,15 +60,15 @@ if(isset($_SESSION['email']) && isset($_SESSION['group_id'])){
     <body style="padding-top:64px;">
         <!-- navbar -->
         <?php include('includes/navbar.php')?>
-        <div class="container">
+        <div class="container mt-5">
             
             <?php
                 if(count($wishlists) > 0){
                     include('includes/wishlist.list.php');
                 } else {
                     echo "<div class=\"row\">
-                            <div class=\"col-md-3\"> 
-                                <h4>No wishlist found!</h4>
+                            <div class=\"col mb-5 offset-md-2\"> 
+                                <h4>No wishlist found! Please add some items to your Wishlist.</h4>
                             </div>
                         </div>";
                 }

@@ -78,7 +78,7 @@ if(isset($_SESSION['email']) && isset($_SESSION['group_id'])){
     					   </div>";
     			}
 			?>
-			<div class="row">
+			<div class="row ml-1">
                 <a href="add.product.php">Add new Product</a>
             </div>
             <div class="row">

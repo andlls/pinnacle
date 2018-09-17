@@ -72,7 +72,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                     
                 </div>
             </div>
-            <div class="row"> 
+            <div class="row md-4 offset-md-4 mt-5 mb-5"> 
                 <div class=\"col-md-3\"> 
                      <h6>Still don't have an account?</h6>
                     <a href=\signup.php>Register now!</a>
