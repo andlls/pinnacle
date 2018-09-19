@@ -18,7 +18,7 @@
     <div class="container-fluid">
         <form name="productdetail-form" id="productdetail-form" method="post" action="wishlist.php">
         <div class="row">
-           <div class="col-md-6">
+           <div class="col-md-6 mt-5">
                <?php 
                 foreach($productPhoto as $item ){
                     $img = '/images/product/'.$productDetail[0]['category'].'/'.$item['photo'];
@@ -26,7 +26,7 @@
                 }
                ?>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mt-5">
                <h2>Name: <?php echo $productDetail[0]['name']; ?></h2>
                <h5 class="price">Price: <?php echo $productDetail[0]['price']; ?></h5>
                <p>Description: <?php echo $productDetail[0]['description']; ?></p>
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-5">
                <div class="form-group">
                    <label for="quantity">Quantity:</label>
                    <input class="form-control" type="text" name="quantity" id="quantity" placeholder="e.g. 2"/>
