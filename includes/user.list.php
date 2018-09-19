@@ -127,9 +127,9 @@
 								  <input class=\"form-control\" type=\"password\" name=\"password\" id=\"password\" placeholder=\"minimum 6 characters\"/>
 							  </div>
 							  
-							  <button id=\"action\" name=\"action\" value=\"update_details\" class=\"btn btn-info mt-2 mb-4 \" type=\"submit\">Update Details</button>
-							  <button id=\"action\" name=\"action\" value=\"update_password\" class=\"btn btn-info mt-2 mb-4 \" type=\"submit\">Update Password</button>
-							  <button id=\"action\" name=\"action\" value=\"delete\" class=\"btn btn-info mt-2 mb-4 \" type=\"submit\">Delete</button>
+							  <button id=\"action\" name=\"action\" value=\"update_details\" class=\"btn btn-info mt-4 mb-4 mr-2\" type=\"submit\">Update Details</button>
+							  <button id=\"action\" name=\"action\" value=\"update_password\" class=\"btn btn-info mt-4 mb-4  mr-2 \" type=\"submit\">Update Password</button>
+							  <button id=\"action\" name=\"action\" value=\"delete\" class=\"btn btn-info mt-4 mb-4  mr-2 \" type=\"submit\">Delete</button>
 							</form>
 						</div>";
 						
