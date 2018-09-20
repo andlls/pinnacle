@@ -9,12 +9,12 @@
         $product_category = $item['category'];
         $product_photo = $item['photo'];
         
-        echo "<div class=\"col-md-2\" > 
+        echo "<div class=\"col-md-3\" > 
                     <h4>$product_name</h4>
                     <img src=\"images/product/$product_category/$product_photo\" class=\"img-fluid\">
-                    <h5>$product_price</h5>";
+                    <p><h5>Price: $ $product_price</h5></p>";
                     
-        echo "<a href=\"detail.product.php?product_id=$product_id\">Detail</a>";
+        echo "<a href=\"detail.product.php?product_id=$product_id\">View Details</a>";
         
         echo "</div>";
     }

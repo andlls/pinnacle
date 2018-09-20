@@ -82,6 +82,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <script src="js/signin.js"></script>
     </body>
     <footer>
-    <?php include('includes/footer.php')?>
+    <div class = "fixed-bottom">
+        <?php include('includes/footer.php')?>
+    </div>
+    
 </footer>
 </html>

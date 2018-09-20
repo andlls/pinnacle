@@ -100,6 +100,10 @@ if(!isset($_SESSION['email']) && !isset($_SESSION['group_id'])){
         </div>
     </body
     <footer>
-    <?php include('includes/footer.php')?>
+    
+    <div class = "fixed-bottom">
+        <?php include('includes/footer.php')?>
+    </div>
+    
 </footer>
 </html>

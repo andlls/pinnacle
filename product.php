@@ -57,6 +57,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         </div>
     </body>
     <footer>
-    <?php include('includes/footer.php')?>
+    <div class = "sticky-bottom">
+        <?php include('includes/footer.php')?>
+    </div>
+    
 </footer>
 </html>

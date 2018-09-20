@@ -15,9 +15,9 @@
       <div class="card-body">
         <h5 class="card-title">Follow us on social media</h5>
         <p class="card-text">Give us a follow and keep up to date with all the new updates.</p>
-        <a href="https://www.facebook.com" class="btn btn-dark">Facebook</a>
-        <a href="https://www.instagram.com/pinnaclehealthait/" class="btn btn-dark">Instagram</a>
-        <a href="https://www.twitter.com" class="btn btn-dark">Twitter</a>
+        <a href="https://www.facebook.com" class="btn btn-dark" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/pinnaclehealthait/" class="btn btn-dark" target="_blank">Instagram</a>
+        <a href="https://www.twitter.com" class="btn btn-dark" target="_blank">Twitter</a>
       </div>
     </div>
   </div>

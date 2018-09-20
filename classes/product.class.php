@@ -37,7 +37,7 @@ class Product extends Database{
     public function getCategories(){
         
         $categories = array();
-        $query = "select category_id, description as category
+        $query = "select category_id, description as category, photo
                   from category
                   order by description";
                     
