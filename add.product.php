@@ -59,15 +59,16 @@
     <?php include('includes/navbar.php') ?>
     <div class="container-fluid">
         <form name="productadd-form" enctype="multipart/form-data" id="productadd-form" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-            <div class="row">
-                <div class="col-md-6">
-                   <input class="form-control" type="text" name="name" id="name" placeholder="Name" />
-                   <input class="form-control" type="text" name="price" id="price" placeholder="Price"/>
-                   <input class="form-control" type="text" name="description" id="description" placeholder="Description"/> 
-                   <input class="form-control" type="text" name="size" id="size" placeholder="Size: e.g. XXL"/>
+            <div class="row mt-2 mb-2">
+                <div class="col-md-6 mb-2 mt-5">
+                    <h3> Add a new Product </h3>
+                   <input class="form-control mb-2" type="text" name="name" id="name" placeholder="Name" />
+                   <input class="form-control mb-2" type="text" name="price" id="price" placeholder="Price"/>
+                   <input class="form-control mb-2" type="text" name="description" id="description" placeholder="Description"/> 
+                   <input class="form-control mb-2" type="text" name="size" id="size" placeholder="Size: e.g. XXL"/>
                    <?php 
                     if(count($categories)>0) {
-                        echo "<select class=\"form-control custom-select\" name=\"category_id\" id=\"category_id\">
+                        echo "<select class=\" mb-2 form-control custom-select\" name=\"category_id\" id=\"category_id\">
 								<option value=\"\">Select a category</option>";
 								foreach($categories as $item){
                                     $category_id = $item['category_id'];
@@ -96,7 +97,7 @@
                     <input class="form-control" type="file" name="photo" id="photo"/>
                 </div>
             </div>
-            <button class="btn btn-info mt-2" type="submit" name="action" id="action" value="add">Add new Product</button>
+            <button class="btn btn-info mt-2 mb-5" type="submit" name="action" id="action" value="add">Add new Product</button>
         </form>
         <div class="row">
             <div class="col-md-6">

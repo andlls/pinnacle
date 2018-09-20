@@ -100,7 +100,7 @@
         </div>
     </body>
     <footer>
-    <div class = "fixed-bottom">
+    <div class = "sticky-bottom">
         <?php include('includes/footer.php')?>
     </div>
     
