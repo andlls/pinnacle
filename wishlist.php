@@ -17,33 +17,35 @@ if(isset($_SESSION['email']) && isset($_SESSION['group_id'])){
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         
         $user_id = $user->getUserIdByEmail($email);
-        $wishlist_user_id = $_POST['wishlist_user_id'];
+        $action = $_POST['action'];
         
-        //if is admin we let delete without verification
-        if(strcmp($user_id,$wishlist_user_id) == 0 || $user->isAdmin($group_id) == true) {
-            
-            $delete = $_POST['delete'];
-           //not a delete request
-            if( strlen($delete) <= 0){
-                $product_id = $_POST['product_id'];
-                $quantity = $_POST['quantity'];
-                $wishlist->addOrUpdateWishlist($wishlist_user_id, $product_id, $quantity);
-            } else {
-                //deleting
-                $wishlist_id = $_POST['wishlist_id'];
-                $result = $wishlist->deleteWishlist($wishlist_id, $wishlist_user_id);
-                if(!$result){
-                    $message = implode(' ',$wishlist -> errors);
-                    $message_class = 'warning';
+        //not a delete request
+        if( strcmp($action, 'add') == 0 ){
+            $product_id = $_POST['product_id'];
+            $quantity = $_POST['quantity'];
+            $wishlist->addOrUpdateWishlist($user_id, $product_id, $quantity);
+        } else {
+            //deleting
+            if(strcmp($action, 'delete') == 0) {
+                $wishlist_user_id = $_POST['wishlist_user_id'];
+                //if is admin we let delete without verification
+                if(strcmp($user_id,$wishlist_user_id) == 0 || $user->isAdmin($group_id) == true){
+                    $wishlist_id = $_POST['wishlist_id'];
+                    $result = $wishlist->deleteWishlist($wishlist_id, $wishlist_user_id);
+                    if(!$result){
+                        $message = implode(' ',$wishlist -> errors);
+                        $message_class = 'warning';
+                    }
                 }
+            } else{
+                $message = 'User does not have rights to alter wishlist';
+                $message_class = 'warning';
             }
-        } else{
-            $message = 'User does not have rights to alter wishlist';
-            $message_class = 'warning';
         }
     }
 
     if($user->isNormalUser($group_id) == true){
+        
         $wishlists = $wishlist -> getWishlistsByUserEmail($email);
     } else {
         $wishlists = $wishlist -> getWishlists();

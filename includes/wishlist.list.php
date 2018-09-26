@@ -38,12 +38,12 @@
                                name=\"wishlist_id\" id=\"wishlist_id\" value=\"$wishlist_id\"/>
                         <input class=\"form-control\" type=\"hidden\" 
                                name=\"wishlist_user_id\" id=\"wishlist_user_id\" value=\"$wishlist_user_id\"/>
-                        <button value=\"change\" id=\"change\" 
-                           name=\"change\" class=\"btn btn-info mt-2\"  
+                        <button value=\"add\" id=\"action\" 
+                           name=\"action\" class=\"btn btn-info mt-2\"  
                                type=\"submit\">Change
                         </button>
-                        <button value=\"delete\" id=\"delete\" 
-                           name=\"delete\" class=\"btn btn-info mt-2\"  
+                        <button value=\"delete\" id=\"action\" 
+                           name=\"action\" class=\"btn btn-info mt-2\"  
                                type=\"submit\">Delete
                         </button>
                     </div>";
