@@ -9,7 +9,7 @@ if(isset($_SESSION['email']) && isset($_SESSION['group_id'])){
                   'My Account' => 'user.php',
                   'Sign out' => 'signout.php',
                   'Products' => 'product.php',
-                  'Wishlist' => 'wishlist.php');
+                  'Shopping List' => 'wishlist.php');
      
     //staff && admin
     if ($user->isNormalUser($_SESSION['group_id'])==false){

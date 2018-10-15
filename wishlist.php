@@ -62,7 +62,7 @@ if(isset($_SESSION['email']) && isset($_SESSION['group_id'])){
     <body style="padding-top:64px;">
         <!-- navbar -->
         <?php include('includes/navbar.php')?>
-        <div class="container mt-5">
+        <div class="container mt-5 mb-5">
             
             <?php
                 if(count($wishlists) > 0){
@@ -70,7 +70,7 @@ if(isset($_SESSION['email']) && isset($_SESSION['group_id'])){
                 } else {
                     echo "<div class=\"row\">
                             <div class=\"col mb-5 offset-md-2\"> 
-                                <h4>No wishlist found! Please add some items to your Wishlist.</h4>
+                                <h4>No wishlist found! Please add some items to your Shopping List.</h4>
                             </div>
                         </div>";
                 }
@@ -86,9 +86,11 @@ if(isset($_SESSION['email']) && isset($_SESSION['group_id'])){
                 }
             ?>
         </div>
+        </div>
+        </div>
     </body>
     <footer>
-    <div class = "fixed-bottom">
+    <div class = "sticky-bottom">
         <?php include('includes/footer.php')?>
     </div>
     
