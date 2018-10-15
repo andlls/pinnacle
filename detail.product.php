@@ -51,7 +51,7 @@
                    <input class="form-control" type="text" name="quantity" id="quantity" placeholder="e.g. 2"/>
                    <input class="form-control" type="hidden" name="product_id" id="product_id" value="<?php echo $product_id?>"/>
                </div>
-               <button value="add" id="action" name="action"  class="btn btn-info mt-2" type="submit">Add to wishlist</button>
+               <button value="add" id="action" name="action"  class="btn btn-info mt-2" type="submit">Add to shopping list </button>
             </div>
         </div>
         </form>
